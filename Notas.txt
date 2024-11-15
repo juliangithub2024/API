@@ -1,0 +1,23 @@
+========= NOTAS =============================== 9 sep 2024 =================
+
+
+Obtener unas tablas y graficas del desempeo del proyecto, es decir tablas de resultados, comparativas, graficas de desempeo, de medidas de vaiables aleatorias (comunicacion, tiempo de respuesta, facilidad dde uso e la aplicaciones, etc.
+
+unas 10 empresas con 3 o 5 productos cada una de ellas
+
+_________________________________________
+el modelado del proyecto con las redes de petri, analisis de funcionamiento, con algebra lineal, p-invariantes, transitions invriants., prueba de vivacidad del modelo de red de petri, si es una red viva y acotada.
+
+
+______________________________________
+buscar un journal objetivo (target)  de mdpi, que tenga una gran afinidad de acuerdo a un resumen del proyecto escrito en ingles
+
+resumen de 200 palabras
+tiempo de respuetsa corto de publicacion, mejor match, de alo impacto o sea que tenga factor de impacto, y este valdado en scimago.
+
+
+
+
+
+
+

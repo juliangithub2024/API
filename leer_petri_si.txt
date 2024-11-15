@@ -1,0 +1,289 @@
+
+==== DESCRIPCION ================== Petri Nets  ==  14 junio 2024 ========================
+- El proyecto petri_nets utiliza rutas web y rutas API
+- Rutas web: Desde el navegador se ingresa el usuario y contraseña, 
+             se registran los centros comerciales y las ofertas de cada centro comercial 
+- Rutas API: Se accede desde un dispositivo movil (DM), el DM envia sus coordenadas
+             geograficas al servidor, y el servidor le regresa las ofertas de los centros
+             comerciales que se encuentran a 200 m de distancia.
+
+==========================================================================================
+
+=========================== TECNOLOGIAS UTILIZADAS =======================================
+Laravel 9: petri_sii
+MatriaDB: petri_nets
+Kotlin: RDP
+
+"laravel/framework": "^9.2",
+"php": "^8.0.2",
+==========================================================================================
+
+Nombre del proyecto: petri_nets
+Nombre de la DB: petri_nets
+
+Acceso a mariaDB: sudo mysql -u root
+
+use de sesiones
+diferetes roles
+
+
+npm run dev
+
+php artisan serve --host 0.0.0.0
+
+https://www.coordenadas-gps.com/
+
+
+
+========= LARAVEL ================================ 7 sep 2024 =============================
+ - agregue codigo a al metodo index del contraoldaor, y una ruta API, 
+ - para que se comunicara con otra aplicacion de kotlin
+
+
+============================================================================================
+
+
+
+
+========= LARAVEL ================================ 3 sep 2024 =============================
+
+https://guides.codepath.com/android/Displaying-Images-with-the-Picasso-Library
+
+
+Tutorial RECYCLERVIEW DEFINITIVO en ANDROID 📱 con KOTLIN en español + GRID [Android en Kotlin 2022]
+https://www.youtube.com/watch?v=k3zoVAMuW5w
+
+
+
+============================================================================================
+
+========= LARAVEL ================================ 2 sep 2024 =============================
+- Lo  de la imagen ya funciona en la pagina web
+ 
+
+============================================================================================
+
+
+========= LARAVEL ================================ 29 ago 2024 =============================
++ Pendientes
+    - Guardar una imagen de los items             **********       **** TERMINADO EN LARAVEL
+    - Mostrar imagen en la app                    **********       **** TERMINADO   4 ago 2024
+    - Mostrar el nombre del negocio
+    - Que el proseso se ejecute de manetra indefinida cada  1 min
+============================================================================================
+
+
+
+========= LARAVEL ================================ 28 ago 2024 =============================
+ - Me falta agregar la imagen en la lista de ofertas --- kotlin
+ - Mostrar el nombre del negocio en la lista de ofertas
+ - Cambiar todo a ingles
+ - https://www.youtube.com/watch?v=oJNFaOmh9UE&list=PL_z8ReaP-3kTf017rTy0At67klfJK7JWQ&index=4         sobre XML
+
+
+ * https://www.youtube.com/watch?v=Td4wHh_ZivE
+ * Android - Jetpack Compose - Room - Retrofit - MVVM - Hilt - Pruebas unitarias - REST API - SQLite
+ - Me quede en el minuto 12
+
+============================================================================================
+
+
+
+ 
+========= LARAVEL ================================ 27 ago 2024 =============================
+ - La aplicacion movil menfunciono mostrandome la informacion de la API en el celular
+ - Despues de hacer el curso que compre en udemy la app la termine en 2 dias
+ * https://www.youtube.com/watch?v=Td4wHh_ZivE
+ * Android - Jetpack Compose - Room - Retrofit - MVVM - Hilt - Pruebas unitarias - REST API - SQLite
+
+============================================================================================
+
+
+
+
+========= LARAVEL ================================ 26 ago 2024 =============================
+ * Todo el texto del software en ingles
+ * imagen del  producto
+ * todos los anuncios de ofertas en ingles
+ * figareme en el target, del articulo
+
+ - Tengo un error en la forma en la que se regresan los datos de la API y se prosesan en la app
+ - 
+==============================================================================================
+
+
+========= LARAVEL ================================ 23 ago 2024 ===============================
+ - 
+ 
+ - Estoy corrigiendo errores en el kotlin en al itemAdaper
+
+====================================================================================
+
+
+========= LARAVEL ================================ 22 ago 2024 ========================
+- para instlar JWT se utlizo el siguiente enlace
+- https://www.youtube.com/watch?v=kP2N_eEv-iA&t=783s
+
+--    https://jwt-auth.readthedocs.io/en/develop/quick-start/#create-the-authcontroller
+
+- Como no utilizo sesiones no configure el archivo authControler
+- Estoy repasando lo que esta en el video 124
++ Estoy calculando la distancia en el controlador OfferController
++ KOTLIN: se creao el modelo 
+
+====================================================================================
+
+
+========= LARAVEL ================================ 21 ago 2024 ========================
+  Pagina para instlar JWT
+  
+  - https://blog.logrocket.com/implementing-jwt-authentication-laravel-10/
+
+ - composer require tymon/jwt-auth 
+ - php artisan vendor:publish
+
+====================================================================================
+ 
+================21 jun 2024 =======================================================
+  - Falta validar el ingreso  de datos en los formularios de negocios  y articulos
+  - La aplicacion utiliza rutas api y rutas web
+  - Rutas web --------- Trminadas
+
+  * Rutas API --------- Falta ******** AQUI ME QUEDE
+  - me quede en el min 13
+  https://www.youtube.com/watch?v=kP2N_eEv-iA&t=934s
+
+====================================================================================
+
+
+
++ CREAR UN CONTROLADOR DENTRO DE UNA CARPETA LLAMADA API 
+    php artisan make:controller API/MovilController   ----- Se utilizara para aceder a las tablas desde el movil
+
+
+
+======== 19 de jun 2024================================
+Me quede dando de alta lo negocios ----- Terminado
+
+no encuentra la tabla Bussines
+
+===========================================
+  
+
+1/5 - Laravel: Roles + Permisos + Dashboard + Auth + CRUD - Presentación
+https://www.youtube.com/watch?v=I4vgw0dcKwo&list=PLrAw40DbN0l0cOs7BOjdWj5ajrFyeElFR
+
+
++ DESPUES EJECUTAR LAS MIGRACIONES     
+    php artisan migrate  
+    
+
+
+*** voy en el min 11
+2/5 - Laravel: Roles + Permisos + Dashboard + Auth + CRUD - Controlador Roles
+https://www.youtube.com/watch?v=SzH67-KqNgs&list=PLrAw40DbN0l0cOs7BOjdWj5ajrFyeElFR&index=2
+
+ + CREACION DE CONTROLADORES  * al usar 'resource' se crearon los metodos en cada controlador
+ php artisan make:controller ComercioController --resource
+ 
+  
+
+ - php artisan optimize:clear 
+
+
+    + MOSTRAR RUTAS
+	php artisan route:list 
+
+Datos de usuario
+email: jperez@hotmail.com
+Password: 123456789
+
+ 
++ TEMAS DEL SIGUIENTE VIDEO	
++ https://www.youtube.com/watch?v=yp8qPUpie0A	
+	
+********** Super administrator ******** min 4 *********	
+user: admin@gmail.com
+pwd: 123456789
+*******************************************************	
+
+23°43'32"N 99°09'10"W   paseo mendez
+
+php artisan make:seeder SeederTablePermisos      *** min 6
+
+
++ EJECUTAR SEEDER
+ php artisan db:seed --class=SeederTablePermisos
+
+
+me quede en el min 6
+https://www.youtube.com/watch?v=yp8qPUpie0A&list=PLrAw40DbN0l0cOs7BOjdWj5ajrFyeElFR&index=4
+
+
+
+https://www.youtube.com/watch?v=yp8qPUpie0A&list=PLrAw40DbN0l0cOs7BOjdWj5ajrFyeElFR&index=5
++ EJECUTAR SEEDER
+ php artisan db:seed --class=SeederTablePermisos                     min 7:40
+
+
+https://www.youtube.com/watch?v=yp8qPUpie0A&list=PLrAw40DbN0l0cOs7BOjdWj5ajrFyeElFR&index=5
+
+min 35
+
+  
+
++ MOSTRAR RUTAS
+	php artisan route:list 
+  
+
+
+ + CREACION DE CONTROLADORES  * al usar 'resource' se crearon los metodos en cada controlador
+ web
+    php artisan make:controller StoreController --resource // business
+    php artisan make:controller ItemController --resource
+
+    API
+    php artisan make:controller API/OfferController --resource       // Offer: Ofrtas en español
+    
+      
+
+
++ CREACION DE MODELOS           ========= 19 jun 2024
+    php artisan make:model Store    
+    php artisan make:model Item
+
+
+
+ + DESPUES EJECUTAR LAS MIGRACIONES     
+    php artisan migrate  
+ 
+
+
+
+
+
+Tabla negocios
+  id
+  nombre
+  domicilio
+  telefono
+  correo
+  altitud
+  latitud
+
+
+
+Tabla item
+  id
+  bussines_id
+  nombre        - nombre del articulo
+  precio        - precio normal
+  descuento     - almacenara el porcentaje de descuento, *el sistema calculara el precio menos el descuento
+  p_venta       - precio de venta
+
+
+
++ Crear MIGRATIONS una tabla en texto en los archivos de laravel
+    php artisan make:migration create_stores_table;
+   
+   php artisan make:migration create_items_table;   

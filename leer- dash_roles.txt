@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="16dp"
+    android:orientation="vertical"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="3dp"
+    tools:context=".ui.MainActivity" >
+
+
+
+    <LinearLayout
+        android1:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp" >
+
+        <TextView
+            android:id="@+id/tvBussines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Negocio"/>
+
+
+
+        <TextView
+            android:id="@+id/tvItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android1:gravity="center_horizontal"
+            style="@style/TextAppearance.AppCompat.Medium"
+            tools:text="Producto"/>
+
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android1:gravity="center_horizontal"
+            tools:text="Precio regular"/>
+
+
+
+        <TextView
+            android:id="@+id/tvPriceSale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android1:gravity="center_horizontal"
+            tools:text="Precio de venta"/>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('items', function (Blueprint $table) {
+            $table->engine="InnoDB";   /* Para la eliminacion en cascada  */
+            $table->bigIncrements('id');
+            $table->bigInteger('stores_id')->unsigned();
+            $table->string('name'); /* nombre del producto o servicio */ 
+            $table->string('price');
+            $table->string('discount');  // discount: es el  precio de descuento
+            $table->string('sale'); /* sale: precio de venta, ya con el  descuento */ 
+            $table->string('image');
+            $table->timestamps();
+
+            $table->foreign('stores_id')->references('id')->on('stores')->onDelete("cascade");
+        });
+    }
+
+   
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('items');
+    }
+};
+
+
