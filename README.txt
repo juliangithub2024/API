@@ -1,3 +1,11 @@
+
+Introduction
+This project presents an API developed using Laravel 9.2, designed to facilitate interaction with databases. The guide provides detailed instructions for installing, configuring, and running the API in a local environment. Before starting, ensure that you meet the prerequisites and follow the outlined steps to ensure a successful setup. 
+
+This implementation utilizes MariaDB as the database management system. Throughout this documentation, the necessary commands are described to clone the repository, configure dependencies, connect to the database, and execute migrations. Finally, access to the development server is provided for testing the API in the configured environment.
+
+
+
 # Laravel 9.2 API - Installation Instructions
 
 ##Prerequisites
